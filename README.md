@@ -27,7 +27,8 @@ device = 'cuda:0'
 pipe = None
 cotj = CoTjQwenImagePipeline(model_path=model_path, mlp_path=mlp_path, pipe=pipe, device=device)
 
-prompt = "A young female researcher wearing a dark blue Polo shirt with a red 'Unicom' logo on her chest, confidently smiling at the camera, writing with a black marker on the glass wall of a futuristic data center: 'CoTj enables generative AI to move from fixed, blind-step modes to intelligent, adaptive planning.'"
+prompt = "一位身着深蓝色Polo衫的年轻女性研究员，胸前印有“Unicom”的红色Logo，正对镜头自信微笑，在充满科技感的数据中心透明的玻璃幕墙上，用黑色马克笔清晰地写着：“CoTj 让生成式 AI 从‘盲人摸象’的固定模式，迈入‘智能规划’的自适应时代。”"
+
 
 num_inference_steps = 10
 
