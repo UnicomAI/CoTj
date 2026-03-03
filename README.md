@@ -7,10 +7,11 @@
 It upgrades the standard, fixed-step denoising schedules (System 1) into **condition-adaptive, optimally planned trajectories (System 2)**, enabling flexible, high-fidelity image generation under varying prompts and constraints.
 
 CoTj establishes an **offline graph for each condition**, searches for optimal denoising paths, and supports both **fixed-step optimal sequences** and **adaptive-length planning** for fewer steps without sacrificing output quality. 
-The full methodology, theoretical analysis, and experiments are detailed in a research work **currently under submission, with a preprint soon to appear on arXiv.**.
+The full methodology, theoretical analysis, and experiments are detailed in a research work **currently under submission, with a preprint soon to appear on arXiv.**
+
 <img width="1453" height="1185" alt="image" src="https://github.com/user-attachments/assets/1457d497-72f5-4dd2-a771-4736ef5e4f48" />
 
----
+
 
 ---
 
@@ -34,9 +35,9 @@ The full methodology, theoretical analysis, and experiments are detailed in a re
 
 The newly open-sourced, train-free **CoTj** framework from China Unicom AI Institute enables diffusion models to leave behind "blind-box" generation and gain human-like global planning capability. By extracting **Diffusion DNA** in just **0.073ms** to quantify generation difficulty, high-dimensional generation is transformed into a graph-theoretic shortest path problem. Simple prompts take shortcuts, while complex descriptions are refined meticulously — achieving truly deliberate, planned generation.
 
-1️⃣ **Right path, exponential effect**: Even at low computational budgets, image quality is dramatically improved. Data proves that **finding the right trajectory outweighs merely stacking high-order solvers**.
+1️⃣ **Trajectory reachability & emergent acceleration**: Fewer steps don’t mean lower quality. By following geometrically optimal paths, high-fidelity latent endpoints remain fully reachable. A 10-step CoTj reconstruction can surpass a baseline with dozens of steps. This precise trajectory optimization directly produces **emergent inference acceleration**, eliminating redundant computation. It also naturally supports **cache-adaptive acceleration**, targeting high-information-density regions for computation reuse.
 
-2️⃣ **Trajectory reachability & emergent acceleration**: Fewer steps don’t mean lower quality. By following geometrically optimal paths, high-fidelity latent endpoints remain fully reachable. A 10-step CoTj reconstruction can surpass a baseline with dozens of steps. This precise trajectory optimization directly produces **emergent inference acceleration**, eliminating redundant computation. It also naturally supports **cache-adaptive acceleration**, targeting high-information-density regions for computation reuse.
+2️⃣ **Right path, exponential effect**: Even at low computational budgets, image quality is dramatically improved. Data proves that **finding the right trajectory outweighs merely stacking high-order solvers**.
 
 3️⃣ **Robust video generation**: Tested on **Wan2.2**, CoTj reveals the **Generative Hierarchy** principle: stabilize structure first, then animate. This approach eliminates frame collapse and "pseudo-motion" seen in low-step baselines, prioritizing fidelity to produce smooth dynamic content.
 
