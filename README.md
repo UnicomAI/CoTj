@@ -12,6 +12,40 @@ The full methodology, theoretical analysis, and experiments are detailed in a re
 
 ---
 
+---
+
+## 💡 Core Highlights & Breakthroughs
+
+* 🧠 **"System 2" Global Planning**: CoTj ends the "blind-box" generation of traditional diffusion models. By extracting a **Diffusion DNA** in just **0.073ms** to quantify generation difficulty, it transforms high-dimensional generation into a graph-theoretic shortest path problem. It takes shortcuts for simple scenes and meticulously refines complex ones, enabling truly deliberate, planned generation.
+
+* ⚡ **Trajectory Reachability & Emergent Acceleration**: Fewer steps don’t imply lower quality. Following geometrically optimal paths ensures high-fidelity **latent endpoints** remain reachable. A 10-step CoTj reconstruction can surpass multi-step baselines. This precise trajectory optimization naturally produces emergent inference acceleration and seamlessly integrates with **cache-adaptive acceleration**, reusing computation in high-information-density regions.
+  
+* 🛣️ **Trajectory Routing > Solvers**: Choosing the right path matters more than stacking high-order solvers. Even under low computational budgets, CoTj demonstrates superior image quality and proves that **optimal trajectory planning outweighs solver complexity**.
+
+* 🎬 **Robust Video Generation**: Validated on **Wan2.2**, CoTj reveals the **Generative Hierarchy** principle: stabilize structure first, then animate. By prioritizing fidelity, it eliminates frame collapse and "pseudo-motion" seen in low-step baselines, producing smooth and coherent motion dynamics.
+
+* 🩺 **Model "X-Ray" Diagnostics**: Diffusion DNA also functions as a structural diagnostic tool, transparently revealing hidden issues like **over-cooking** and non-convergence in the late stages of certain distilled models.
+
+<details>
+<summary><b>📢 Highlights </b></summary>
+<br>
+
+🚀 **Diffusion models officially enter the "System 2" global planning era!**
+
+The newly open-sourced, train-free **CoTj** framework from China Unicom AI Institute enables diffusion models to leave behind "blind-box" generation and gain human-like global planning capability. By extracting **Diffusion DNA** in just **0.073ms** to quantify generation difficulty, high-dimensional generation is transformed into a graph-theoretic shortest path problem. Simple prompts take shortcuts, while complex descriptions are refined meticulously — achieving truly deliberate, planned generation.
+
+1️⃣ **Right path, exponential effect**: Even at low computational budgets, image quality is dramatically improved. Data proves that **finding the right trajectory outweighs merely stacking high-order solvers**.
+
+2️⃣ **Trajectory reachability & emergent acceleration**: Fewer steps don’t mean lower quality. By following geometrically optimal paths, high-fidelity latent endpoints remain fully reachable. A 10-step CoTj reconstruction can surpass a baseline with dozens of steps. This precise trajectory optimization directly produces **emergent inference acceleration**, eliminating redundant computation. It also naturally supports **cache-adaptive acceleration**, targeting high-information-density regions for computation reuse.
+
+3️⃣ **Robust video generation**: Tested on **Wan2.2**, CoTj reveals the **Generative Hierarchy** principle: stabilize structure first, then animate. This approach eliminates frame collapse and "pseudo-motion" seen in low-step baselines, prioritizing fidelity to produce smooth dynamic content.
+
+4️⃣ **Model "X-Ray" diagnostics**: Diffusion DNA can also serve as a structural diagnostic tool, exposing issues in certain distilled models such as **over-cooking** and late-stage non-convergence.
+
+</details>
+
+---
+
 ## 🚀 Quick Start
 
 CoTj can be directly used with the **Qwen-Image pipeline**. Example usage:
