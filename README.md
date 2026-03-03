@@ -7,7 +7,7 @@
 It upgrades the standard, fixed-step denoising schedules (System 1) into **condition-adaptive, optimally planned trajectories (System 2)**, enabling flexible, high-fidelity image generation under varying prompts and constraints.
 
 CoTj establishes an **offline graph for each condition**, searches for optimal denoising paths, and supports both **fixed-step optimal sequences** and **adaptive-length planning** for fewer steps without sacrificing output quality. 
-The full methodology, theoretical analysis, and experiments are detailed in a research work **currently under submission**.
+The full methodology, theoretical analysis, and experiments are detailed in a research work **currently under submission, with a preprint soon to appear on arXiv.**.
 <img width="1453" height="1185" alt="image" src="https://github.com/user-attachments/assets/1457d497-72f5-4dd2-a771-4736ef5e4f48" />
 
 ---
