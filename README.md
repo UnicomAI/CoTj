@@ -108,6 +108,16 @@ This implementation is built upon the Hugging Face **Diffusers** library.
 If you find CoTj useful, please consider citing:
 
 ```bibtex
+@misc{chen2026cotj,
+  title        = {Chain-of-Trajectories: Unlocking the Intrinsic Generative Optimality of Diffusion Models via Graph-Theoretic Planning},
+  author       = {Chen, Ping and Liu, Xiang and Zhang, Xingpeng and Shen, Fei and Gong, Xun and Liu, Zhaoxiang and Chen, Zezhou and Hu, Huan and Wang, Kai and Lian, Shiguo},
+  year         = {2026},
+  publisher    = {ChinaXiv},
+  doi          = {10.12074/202603.00028},
+  url          = {https://chinaxiv.org/abs/202603.00028},
+  note         = {ChinaXiv preprint}
+}
+
 @article{chen2026cotj,
   title   = {Chain-of-Trajectories: Unlocking the Intrinsic Generative Optimality of Diffusion Models via Graph-Theoretic Planning},
   author  = {Ping Chen and Xiang Liu and Xingpeng Zhang and Fei Shen and Xun Gong and Zhaoxiang Liu and Zezhou Chen and Huan Hu and Kai Wang and Shiguo Lian},
