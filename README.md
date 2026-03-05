@@ -1,13 +1,15 @@
 
-# CoTj
+# CoTj (Chain-of-Trajectories: Unlocking the Intrinsic Generative Optimality of Diffusion Models via Graph-Theoretic Planning)
 
 ## 🧭 Description
 
 **CoTj (Chain-of-Trajectories)** is a **graph-theoretic trajectory planning framework** for diffusion models. 
 It upgrades the standard, fixed-step denoising schedules (System 1) into **condition-adaptive, optimally planned trajectories (System 2)**, enabling flexible, high-fidelity image generation under varying prompts and constraints.
 
-CoTj establishes an **offline graph for each condition**, searches for optimal denoising paths, and supports both **fixed-step optimal sequences** and **adaptive-length planning** for fewer steps without sacrificing output quality. 
-The full methodology, theoretical analysis, and experiments are detailed in a research work **currently under submission, with a preprint soon to appear on arXiv.**
+CoTj establishes an **offline graph for each condition**, searches for optimal denoising paths, and supports both **fixed-step optimal sequences** and **adaptive-length planning** to reduce sampling steps without sacrificing output quality.
+
+The latest full paper PDF is included in this repository, and we recommend reading the repo version for the most up-to-date manuscript. The paper is also available via the [**ChinaXiv**](https://chinaxiv.org/abs/202603.00028), with a reprint soon to appear on arXiv.
+
 
 <img width="1453" height="1185" alt="image" src="https://github.com/user-attachments/assets/1457d497-72f5-4dd2-a771-4736ef5e4f48" />
 
