@@ -8,7 +8,7 @@ It upgrades the standard, fixed-step denoising schedules (System 1) into **condi
 
 CoTj establishes an **offline graph for each condition**, searches for optimal denoising paths, and supports both **fixed-step optimal sequences** and **adaptive-length planning** to reduce sampling steps without sacrificing output quality.
 
-**The latest full paper PDF ([**CoTj_v20260305.pdf**](https://github.com/UnicomAI/CoTj/blob/main/CoTj_v20260305.pdf)) is included in this repository, and we recommend reading the repo version for the most up-to-date manuscript**. The paper is also available via the [ChinaXiv](https://chinaxiv.org/abs/202603.00028), with a reprint soon to appear on arXiv.
+**The latest full paper PDF ([**CoTj_v20260305.pdf**](https://github.com/UnicomAI/CoTj/blob/main/CoTj_v20260305.pdf)) is included in this repository, and we recommend reading the repo version for the most up-to-date manuscript**. The paper is also available via the [arXiv](https://arxiv.org/abs/2603.14704).
 
 
 <img width="1453" height="1185" alt="image" src="https://github.com/user-attachments/assets/1457d497-72f5-4dd2-a771-4736ef5e4f48" />
